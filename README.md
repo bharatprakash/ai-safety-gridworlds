@@ -1,8 +1,8 @@
 ## Gym wrapper for the ai-safety-gridworlds
 
-1. Run pip install -e . (or pip install .) on the main folder, ai-safety-gridworlds
+1. Run 'pip install -e .' (or 'pip install .') on the main folder, ai-safety-gridworlds
 
-2. Run pip install -e . (or pip install .) from [ai-safety-gridworlds/ai_safety_gridworlds/gym-safety-gridworlds](https://github.com/bharatprakash/ai-safety-gridworlds/tree/master/ai_safety_gridworlds/gym-safety-gridworlds)
+2. Run 'pip install -e .' (or 'pip install .') from [ai-safety-gridworlds/ai_safety_gridworlds/gym-safety-gridworlds](https://github.com/bharatprakash/ai-safety-gridworlds/tree/master/ai_safety_gridworlds/gym-safety-gridworlds)
 
 3. Usage
 ```
