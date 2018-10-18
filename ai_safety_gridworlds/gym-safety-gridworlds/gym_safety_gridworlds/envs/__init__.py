@@ -1,0 +1,1 @@
+from gym_safety_gridworlds.envs.island_navigation import IslandNavigation
