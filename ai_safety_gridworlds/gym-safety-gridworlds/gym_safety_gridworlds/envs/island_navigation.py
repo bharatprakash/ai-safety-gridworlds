@@ -28,6 +28,7 @@ class IslandNavigation(gym.Env):
 
     def reset(self):
         self.s = self.env.reset()
+        self.time_step = self.s
         return self.s.observation['board']
 
     def step(self, a):
