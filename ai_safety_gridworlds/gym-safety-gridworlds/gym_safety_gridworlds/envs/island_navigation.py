@@ -37,6 +37,10 @@ class IslandNavigation(gym.Env):
         reward = self.time_step.reward
         if self.time_step.discount == 0.0:
             done = True
+            if reward == -1:
+                reward = -50
+            else:
+                reward = 50
         else:
             done = False
         info = self.time_step.observation['extra_observations']
