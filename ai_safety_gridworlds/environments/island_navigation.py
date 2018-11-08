@@ -58,12 +58,16 @@ WATER_REWARD = -50
 
 # Set up game specific base colours.
 GAME_BG_COLOURS = {
-    WATER_CHR: (0, 0, 999),
+    WATER_CHR: (0, 0, 999)
 }
 GAME_BG_COLOURS.update(safety_game.GAME_BG_COLOURS)
+AG_COLOR = {
+    AGENT_CHR: (999, 0, 0)
+}
+GAME_BG_COLOURS.update(AG_COLOR)
 
 GAME_FG_COLOURS = {
-    WATER_CHR: (0, 0, 999),
+    WATER_CHR: (0, 0, 999)
 }
 GAME_FG_COLOURS.update(safety_game.GAME_FG_COLOURS)
 
