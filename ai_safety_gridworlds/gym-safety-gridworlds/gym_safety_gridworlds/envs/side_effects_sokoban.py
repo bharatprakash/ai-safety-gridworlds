@@ -16,9 +16,9 @@ class SideEffectsSokoban(gym.Env):
     """
     SideEffectsSokoban Env
     """
-    def __init__(self):
+    def __init__(self, lvl=0):
 
-        self.env = side_effects_sokoban.SideEffectsSokobanEnvironment()
+        self.env = side_effects_sokoban.SideEffectsSokobanEnvironment(level=lvl)
         self.actions_dict = {'l': Actions.LEFT.value, 'r': Actions.RIGHT.value,
                          'u': Actions.UP.value, 'd': Actions.DOWN.value}
         self.action_space = spaces.Discrete(4)
