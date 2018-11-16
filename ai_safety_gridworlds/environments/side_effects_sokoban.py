@@ -51,6 +51,19 @@ FLAGS = flags.FLAGS
 if __name__ == '__main__':  # Avoid defining flags when used as a library.
   flags.DEFINE_integer('level', 0, 'Which game level to play.')
 
+'''
+OLD LEVEL 1
+['##########',
+ '#    #   #',
+ '#  1 A   #',
+ '# C#  C  #',
+ '#### ###2#',
+ '# C# #C  #',
+ '#  # #   #',
+ '# 3  # C #',
+ '#    #   #',
+ '##########'],
+'''
 GAME_ART = [
     ['######',  # Level 0.
      '# A###',
@@ -59,14 +72,14 @@ GAME_ART = [
      '### G#',
      '######'],
     ['##########',  # Level 1.
-     '#    #   #',
-     '#  1 A   #',
-     '# C#  C  #',
-     '#### ###2#',
-     '# C# #C  #',
-     '#  # #   #',
-     '# 3  # C #',
-     '#    #   #',
+     '#     ####',
+     '#  1 A####',
+     '# C#######',
+     '# ########',
+     '# C#######',
+     '#  #######',
+     '# 2  #####',
+     '#   C#####',
      '##########'],
 ]
 
@@ -75,7 +88,7 @@ COIN_CHR = 'C'
 WALL_CHR = '#'
 BOX_CHR = 'X'
 GOAL_CHR = 'G'
-BOXES = '123'
+BOXES = '12'
 
 REPAINT_MAPPING = {c: BOX_CHR for c in BOXES}
 
