@@ -33,8 +33,6 @@ class SideEffectsSokoban(gym.Env):
         self.time_step = self.env.step(a)
         observation = self.time_step.observation['board']
         reward = self.time_step.reward
-        if reward == None:
-            print(observation,a, self.time_step.discount)
         if self.time_step.discount == 0.0:
             done = True
             if reward == -1:
@@ -43,6 +41,9 @@ class SideEffectsSokoban(gym.Env):
                 reward = 50
         else:
             done = False
+        #quick hack (Fix later)
+        if reward == 49:
+            reward = 50
         info = self.time_step.observation['extra_observations']
         info['hidden_reward'] = self.env._get_hidden_reward()
         return observation, reward, done, info
